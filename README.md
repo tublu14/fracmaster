@@ -1,9 +1,9 @@
 # Fracmaster
 
-fracmaster is a lightweight python module that you can use to handle fractions like 1/2 or 3/4 -
+fracmaster is a lightweight python module that you can use to handle fractions like 1/2 or 3/4 
 without Python automatically turning it into a float.
 
-You can also perform math calculations with it. And no, its not like theres .add() and .substract() methods -
+You can also perform math calculations with it. And no, its not like theres .add() and .substract() methods 
 for basic math, you can do this all with **OPERATORS** (+, -, *, /).
 It also includes **right hand calculations** (__radd__, __rsub__) out of the box!
 
@@ -19,8 +19,12 @@ It also includes **right hand calculations** (__radd__, __rsub__) out of the box
 
 ### How to use it:
 Note: You do not need to install any dependencies (pip install ...), fracmaster.py only uses builtin modules.
-1. Copy `fracmaster.py` directly into your project folder.
-2. Import it in your code and use it!
+1. Clone it in your workspace:
+```bash
+git clone https://github.com/tublu14/fracmaster
+```
+2. Copy `fracmaster.py` directly into your project folder.
+3. Import it in your code and use it!
 
 ## Example
 
