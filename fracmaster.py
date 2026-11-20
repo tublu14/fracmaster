@@ -10,7 +10,7 @@ class Frac:
 
     Float values sometimes are really messy becuase computers store numbers in base-2 instead of
     human-readable base-10, and some numbers can't be stored cleanly in base-2, and that's where
-    the Frac class shines. It represents fractions in clean base-10 integers with numerators,
+    the `Frac` class shines. It represents fractions in clean base-10 integers with numerators,
     denominators and whole numbers.
 
     These can also be converted into float values.
@@ -141,9 +141,9 @@ class Frac:
         """
         Simplifies `self` if not already.
 
-        Reduces `self` to the lowest terms (where `GCD(numerator, denominator)` is 1).
+        Reduces `self` to the lowest terms (where `gcd(numerator, denominator)` is 1).
 
-        **Example**:
+        ## Example:
             ```python
             frac = Frac(2, 4)
 
@@ -175,7 +175,12 @@ class Frac:
         return Frac(self.numerator, self.denominator, self.whole, True)
 
     def simplified(self) -> Frac:
-        """Returns the simplified version of `self`."""
+        """
+        Returns the simplified version of `self`.
+
+        Returns a `Frac` object that is equal to `self` and has `gcd(numerator, denominator)`
+        as 1.
+        """
 
         return Frac(self.numerator, self.denominator, self.whole, simple=True)
 
@@ -417,7 +422,7 @@ def find_total(fraction_times_x: Frac, equal_to: SupportsFloat) -> Frac:
 
     Raises:
         TypeError: If `fraction_times_x` is not an instance of `Frac` **or** `equal_to` is not
-          an instance of `SupportsFloat`.
+        an instance of `SupportsFloat`.
 
     Example:
         ```python
