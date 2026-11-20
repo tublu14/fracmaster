@@ -1,7 +1,7 @@
 # Fracmaster
 
-fracmaster is a lightweight python module that you can use to handle fractions like 1/2 or 3/4 
-without Python automatically turning it into a float.
+fracmaster is a lightweight Python module that you can use to handle fractions like 1/2 or 3/4 
+without Python automatically turning them into a float.
 
 You can also perform math calculations with it. And no, its not like theres .add() and .substract() methods 
 for basic math, you can do this all with **OPERATORS** (+, -, *, /).
@@ -42,11 +42,11 @@ print(frac1 + frac2) # Output: Frac(1 + 0/1)
 print(frac3.simplified()) # Output: Frac(0 + 1/3)
 frac3.simplify() # Modifies the Frac itself, so frac3 is now 1/3
 
-print(0.5 > c) # Output: True, because 1/2 is greater than 1/3
+print(0.5 > frac3) # Output: True, because 1/2 is greater than 1/3
 
 frac4 = Frac.from_float(0.5)
 
-print(d) # Output: Frac(0 + 1/2)
+print(frac4) # Output: Frac(0 + 1/2)
 
 frac5 = Frac(2, 5)
 
